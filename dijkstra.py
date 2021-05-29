@@ -13,8 +13,8 @@ class Graph:
 
     def addEdge(self, u, v, w):
         '''
-        The Graph will be undirected and assumed to have positive weights. Dijkstra's algorithm fails when 
-        negative weights are introduced.
+        The Graph will be undirected and assumed to have positive weights.
+        Dijkstra's algorithm fails when negative weights are introduced.
         '''
         self.graph[u].append([v, w])
         self.graph[v].append([u,w])
